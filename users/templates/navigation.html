@@ -1,0 +1,13 @@
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="/">User-Registration</a>
+    {% if current_user.is_active %}
+    <a class="nav-link" href="{{ url_for('user.logout') }}">Logout</a>
+    <a class="nav-link" href="{{ url_for('user.change_password') }}">Change Password</a>
+    {% else %}
+    <a href="{{ url_for('user.register') }}">Signup</a>&nbsp;&nbsp;
+    <a href="{{ url_for('user.login') }}">Login</a>&nbsp;&nbsp;
+    <a href="{{ url_for('user.forgot') }}">Forgot</a>
+    {% endif %}
+</nav>
+</body>

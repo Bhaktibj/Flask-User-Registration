@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<h4 align="center"><b>Forgot Password</b></h4><hr>
+<form method="post" action="">
+    <div class="form-group">
+        <div class="container">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Enter Email" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="container">
+            <input type="submit" class="form-control" value="Forgot">
+        </div>
+    </div>
+</form>
+{% endblock %}
