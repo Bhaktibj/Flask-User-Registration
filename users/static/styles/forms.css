@@ -1,0 +1,17 @@
+.col-sm-6 {
+  border-radius: 2px;
+  padding: 20px;
+  height: fit-content;
+  width: 40%;
+  background-color: powderblue;
+  border: 5px solid gray;
+  }
+
+ .sub{
+  width: 20%;
+  padding: 10px 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  height: 25%
+
+}
